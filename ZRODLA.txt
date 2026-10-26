@@ -1,0 +1,7 @@
+ECHO POMORZA ZACHODNIEGO (tytuł fikcyjny) – wydanie rodzinne o wieży „Dzwon”
+Zdjęcia: archiwum rodzinne. 1985, 2006, 2016: bez zmian. 2000: klasyczna korekta skanów odbitek (balans bieli, poziomy, lekka saturacja, usunięcie drobnych pyłków, delikatne odszumienie; bez AI, bez retuszu twarzy).
+Czcionki (Google Fonts, SIL OFL / Apache 2.0): UnifrakturMaguntia, Playfair Display, Source Serif 4, Libre Franklin, Anton, Special Elite, Courier Prime.
+Historia wieży:
+- https://pl.wikipedia.org/wiki/Bateria_Goeben
+- https://miedzyzdroje.szczecin.lasy.gov.pl/witamy/-/journal_content/56/34493/38103
+- https://polska-org.pl/9100906,Swinoujscie,Wieza_dowodzenia_baterii_Goeben_Dzwon.html

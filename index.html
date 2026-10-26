@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Echo Pomorza Zachodniego – Dzwon, który nigdy nie zadzwonił</title>
+<meta name="description" content="Rodzinna gazeta-album: wieża Dzwon w Świnoujściu-Warszowie w latach 1985, 2000, 2006 i 2016. Tytuł gazety fikcyjny.">
+<meta name="theme-color" content="#1b1b1b">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%23f2eee3'/%3E%3Cpath d='M26 8h12v6c0 10 3 22 14 34v8H12v-8c11-12 14-24 14-34z' fill='%231b1b1b'/%3E%3C/svg%3E">
+<style>
+@font-face{font-family:"Fraktur";src:url(fonts/UnifrakturMaguntia-Book.ttf) format("truetype");font-display:swap}
+@font-face{font-family:"Playfair";font-weight:400 900;src:url(fonts/PlayfairDisplay.ttf) format("truetype");font-display:swap}
+@font-face{font-family:"Playfair";font-style:italic;font-weight:400 900;src:url(fonts/PlayfairDisplay-Italic.ttf) format("truetype");font-display:swap}
+@font-face{font-family:"Serif4";font-weight:200 900;src:url(fonts/SourceSerif4.ttf) format("truetype");font-display:swap}
+@font-face{font-family:"Franklin";font-weight:100 900;src:url(fonts/LibreFranklin.ttf) format("truetype");font-display:swap}
+@font-face{font-family:"Anton";src:url(fonts/Anton-Regular.ttf) format("truetype");font-display:swap}
+@font-face{font-family:"Elite";src:url(fonts/SpecialElite-Regular.ttf) format("truetype");font-display:swap}
+@font-face{font-family:"Courier Prime";src:url(fonts/CourierPrime-Regular.ttf) format("truetype");font-display:swap}
+:root{--paper:#f3efe4;--ink:#1b1b1b;--grey:#5d5a52;--rule:#1b1b1b;--red:#c8102e}
+*{box-sizing:border-box}
+html{background:#d9d4c6;scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;color:var(--ink);font-family:"Serif4",Georgia,serif;font-size:18px;line-height:1.55;
+ background:#d9d4c6 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .3 0 0 0 0 .28 0 0 0 0 .22 0 0 0 .12 0'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)'/%3E%3C/svg%3E")}
+a{color:inherit}
+.page{max-width:1240px;margin:0 auto;background:var(--paper);box-shadow:0 0 0 1px rgba(0,0,0,.08),0 10px 40px rgba(0,0,0,.18)}
+.inner{padding:0 40px}
+
+/* ===== FRONT PAGE ===== */
+.ears{display:flex;justify-content:space-between;gap:14px;padding:18px 40px 8px;font-family:"Franklin";font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--grey)}
+.ears span:nth-child(2){text-align:center}
+.mast{text-align:center;padding:0 20px}
+.mast h1{margin:0;font-family:"Fraktur",serif;font-weight:400;font-size:clamp(44px,8.4vw,112px);line-height:1.02;letter-spacing:.005em}
+.mast .tag{font-family:"Playfair";font-style:italic;font-size:clamp(15px,1.8vw,20px);margin:4px 0 0}
+.dateline{margin:14px 40px 0;border-top:3px double var(--rule);border-bottom:1px solid var(--rule);display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;padding:6px 0;font-family:"Franklin";font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+.front{display:grid;grid-template-columns:1.55fr 1fr;gap:34px;padding:24px 40px 34px}
+.front .kick{font-family:"Franklin";font-weight:800;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--red)}
+.front h2{font-family:"Playfair";font-weight:900;font-size:clamp(40px,5.6vw,76px);line-height:1;margin:8px 0 14px;letter-spacing:-.01em}
+.front .deck{font-family:"Playfair";font-style:italic;font-size:clamp(19px,2vw,24px);line-height:1.35;margin:0 0 16px;color:#2c2a25}
+.front .cols{column-count:2;column-gap:26px;column-rule:1px solid #bbb5a5;font-size:17px;text-align:justify;hyphens:auto}
+.front .cols p{margin:0 0 .7em}
+.front .cols p:first-child::first-letter{float:left;font-family:"Playfair";font-weight:900;font-size:62px;line-height:.85;padding:6px 8px 0 0}
+.disc{font-family:"Franklin";font-size:12px;color:var(--grey);margin-top:12px;border-top:1px solid #bbb5a5;padding-top:8px}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+.cta{font-family:"Franklin";font-weight:800;font-size:15px;letter-spacing:.1em;text-transform:uppercase;padding:13px 20px;border:2px solid var(--ink);background:var(--ink);color:var(--paper);cursor:pointer;transition:transform .15s,box-shadow .15s}
+.cta.alt{background:transparent;color:var(--ink)}
+.cta:hover,.cta:focus-visible{transform:translate(-2px,-2px);box-shadow:4px 4px 0 var(--red);outline:none}
+/* before/after */
+.side h3{font-family:"Franklin";font-weight:900;font-size:13px;letter-spacing:.2em;text-transform:uppercase;margin:0 0 8px;border-top:4px solid var(--ink);padding-top:8px}
+.ba{position:relative;aspect-ratio:3/2;overflow:hidden;background:#222;user-select:none;-webkit-user-select:none;touch-action:pan-y}
+.ba img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;pointer-events:none}
+.ba .b,.ba .a{object-position:50% 50%}
+.ba .a{clip-path:inset(0 calc(100% - var(--p,50%)) 0 0)}
+.ba .handle{position:absolute;top:0;bottom:0;left:var(--p,50%);width:3px;margin-left:-1.5px;background:#fff;box-shadow:0 0 0 1px rgba(0,0,0,.4);pointer-events:none}
+.ba .handle::after{content:"◀ ▶";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:#fff;color:var(--ink);font:700 13px "Franklin";padding:9px 10px;border-radius:30px;box-shadow:0 2px 8px rgba(0,0,0,.4);white-space:nowrap;letter-spacing:-.1em}
+.ba .lab{position:absolute;top:10px;font:800 13px "Franklin";letter-spacing:.12em;background:var(--ink);color:#fff;padding:4px 8px;pointer-events:none}
+.ba .lab.l{left:10px}.ba .lab.r{right:10px;background:var(--red)}
+.ba input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0;touch-action:pan-y}
+.ba:focus-within{outline:3px solid var(--red);outline-offset:3px}
+.side .capt{font-family:"Franklin";font-size:13px;color:var(--grey);margin:6px 0 18px;line-height:1.4}
+.toc{list-style:none;margin:0;padding:0;border-top:4px solid var(--ink)}
+.toc li{border-bottom:1px solid #bbb5a5}
+.toc a{display:flex;gap:12px;align-items:baseline;padding:8px 0;text-decoration:none}
+.toc b{font-family:"Franklin";font-weight:900;font-size:13px;min-width:70px;letter-spacing:.06em}
+.toc span{font-family:"Playfair";font-weight:700;font-size:17px;line-height:1.2}
+.toc a:hover span,.toc a:focus-visible span{text-decoration:underline}
+
+/* ===== TIMELINE DIAL ===== */
+#dial{position:sticky;top:0;z-index:30;background:var(--ink);color:var(--paper);display:flex;align-items:center;gap:6px;padding:8px 14px;overflow-x:auto;scrollbar-width:none}
+#dial::-webkit-scrollbar{display:none}
+#dial .lbl{font:800 11px "Franklin";letter-spacing:.2em;text-transform:uppercase;opacity:.7;margin-right:6px;white-space:nowrap}
+#dial a{flex:none;font:700 15px "Franklin";letter-spacing:.06em;text-decoration:none;padding:6px 12px;border:1px solid rgba(255,255,255,.25);border-radius:30px;transition:background .2s,color .2s}
+#dial a.on{background:var(--paper);color:var(--ink)}
+#dial .prog{position:absolute;left:0;bottom:0;height:3px;background:var(--red);width:var(--pr,0%)}
+
+/* ===== ISSUES ===== */
+.issue{padding:30px 40px 46px;border-top:8px solid var(--ink);position:relative;scroll-margin-top:50px}
+.ihead{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap;border-bottom:3px double var(--rule);padding-bottom:6px;margin-bottom:18px}
+.ihead .mini{font-family:"Fraktur";font-size:30px;line-height:1}
+.ihead .meta{font:600 13px "Franklin";letter-spacing:.08em;text-transform:uppercase;text-align:right}
+.issue .kick{font:800 13px "Franklin";letter-spacing:.2em;text-transform:uppercase;color:var(--red)}
+.issue h2{margin:6px 0 10px;font-family:"Playfair";font-weight:900;font-size:clamp(34px,4.8vw,64px);line-height:1.02}
+.issue .lead{font-family:"Playfair";font-style:italic;font-size:clamp(18px,1.9vw,23px);line-height:1.4;margin:0 0 10px;max-width:900px}
+.issue .by{font:600 13px "Franklin";letter-spacing:.06em;text-transform:uppercase;color:var(--grey);margin:0 0 16px}
+.issue .body{column-count:3;column-gap:28px;column-rule:1px solid rgba(0,0,0,.18);text-align:justify;hyphens:auto;font-size:17px}
+.issue .body p{margin:0 0 .7em;break-inside:avoid-column}
+.issue .body p:first-child::first-letter{float:left;font-family:"Playfair";font-weight:900;font-size:56px;line-height:.85;padding:5px 7px 0 0}
+.note{font:500 14px "Franklin";background:rgba(0,0,0,.05);border-left:4px solid var(--red);padding:8px 12px;margin:14px 0 0;max-width:820px}
+.stamp{display:inline-block;margin:0 0 16px 4px;transform:rotate(-4deg);font:700 15px "Courier Prime";letter-spacing:.12em;color:#b3261e;border:3px solid #b3261e;padding:6px 12px;border-radius:4px;opacity:.82;background:rgba(255,255,255,.15)}
+.facts{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin:22px 0 0;border:2px solid var(--ink)}
+.facts div{padding:12px 10px;border-right:1px solid var(--ink);text-align:center}
+.facts div:last-child{border-right:0}
+.facts b{display:block;font-family:"Playfair";font-weight:900;font-size:30px;line-height:1.05}
+.facts span{font:600 12px "Franklin";letter-spacing:.06em;text-transform:uppercase}
+.src{font:500 13px "Franklin";color:var(--grey);margin-top:14px}
+.sub-h{display:flex;align-items:center;gap:12px;margin:34px 0 18px;font:800 14px "Franklin";letter-spacing:.2em;text-transform:uppercase}
+.sub-h::before,.sub-h::after{content:"";flex:1;height:1px;background:currentColor;opacity:.4}
+
+/* photos */
+.grid{display:flex;flex-wrap:wrap;gap:30px 26px;justify-content:center;margin-top:26px}
+.th{position:relative;display:block;flex:0 1 auto;width:calc(var(--a) * 270px + 2px);max-width:100%;color:inherit;text-decoration:none;cursor:zoom-in}
+.th.big{width:calc(var(--a) * 420px)}
+.th:focus-visible{outline:3px solid var(--red);outline-offset:4px}
+.pf{position:relative;transition:transform .3s ease}
+.th:hover .pf{transform:translateY(-4px)}
+.box{position:relative;overflow:hidden;aspect-ratio:var(--a);background:#222}
+.box img{display:block;width:100%;height:100%;object-fit:cover}
+.cap{display:block;font-family:"Franklin";font-size:14px;line-height:1.35;padding:7px 2px 0;color:#2b2925}
+.cap .no{font-weight:800;margin-right:6px}
+.cap .cr{display:block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--grey);margin-top:2px}
+.fav-dot{position:absolute;top:-10px;right:-10px;z-index:6;width:28px;height:28px;border-radius:50%;background:var(--red);color:#fff;display:none;place-items:center;font:15px Arial,sans-serif;border:2px solid #fff}
+.th.is-fav .fav-dot{display:grid}
+
+/* --- themes per issue --- */
+.t1938{background:#ebe1c8}
+.t1938 .body{column-count:2}
+.t1985{background:#e2dfd6;color:#232323}
+.t1985 h2{font-family:"Serif4";font-weight:800;text-transform:uppercase;letter-spacing:.01em;font-size:clamp(30px,4.2vw,54px)}
+.t1985 .kick{color:#232323;font-family:"Courier Prime";font-weight:700}
+.t1985 .lead{font-family:"Serif4";font-style:normal;font-weight:600}
+.t1985 .box{border:1px solid #333}
+.t1985 .cap{font-family:"Elite";font-size:14px}
+.t2000{background:#fff}
+.t2000 .ihead{background:var(--red);color:#fff;border:0;padding:8px 14px;margin:0 -14px 18px}
+.t2000 .ihead .mini{font-family:"Anton";font-size:26px;letter-spacing:.04em;text-transform:uppercase}
+.t2000 .kick{display:inline-block;background:#ffd500;color:#111;padding:3px 8px;font-family:"Anton";font-weight:400;font-size:16px;letter-spacing:.06em}
+.t2000 h2{font-family:"Anton";font-weight:400;text-transform:uppercase;font-size:clamp(36px,5.6vw,78px);line-height:1;color:#111}
+.t2000 .lead{font-family:"Franklin";font-style:normal;font-weight:700}
+.t2000 .cap{font-weight:600}
+.t2000 .cap .no{background:var(--red);color:#fff;padding:1px 5px}
+.t2000 .sub-h{color:var(--red)}
+.t2006{background:#fbfbf8}
+.t2006 .ihead .mini{font-family:"Franklin";font-weight:900;font-size:22px;letter-spacing:-.01em}
+.t2006 .kick{color:#0a5aa8}
+.t2006 h2{font-family:"Franklin";font-weight:900;letter-spacing:-.02em}
+.t2006 .lead{font-family:"Serif4";font-style:normal;font-weight:400;color:#333}
+.t2006 .sub-h{color:#0a5aa8}
+.t2016{background:#fff}
+.t2016 .ihead{border-bottom:1px solid #111}
+.t2016 .ihead .mini{font-family:"Franklin";font-weight:300;font-size:22px;letter-spacing:.3em;text-transform:uppercase}
+.t2016 .kick{color:#0f766e}
+.t2016 h2{font-family:"Franklin";font-weight:300;letter-spacing:-.03em;font-size:clamp(36px,5.4vw,72px)}
+.t2016 .lead{font-family:"Franklin";font-style:normal;font-weight:400;color:#444}
+.t2016 .body{column-count:2}
+.epilog{background:var(--paper)}
+.epilog .body{column-count:2}
+
+/* altimeter */
+#alti{position:fixed;right:14px;top:50%;transform:translate(130%,-50%);z-index:25;background:#0a2e52;color:#fff;border-radius:14px;padding:12px 10px;width:120px;font-family:"Franklin";box-shadow:0 8px 24px rgba(0,0,0,.35);transition:transform .45s cubic-bezier(.2,.9,.3,1.2)}
+body.climb #alti{transform:translate(0,-50%)}
+#alti .t{font-weight:800;font-size:9px;letter-spacing:.08em;text-transform:uppercase;opacity:.75;text-align:center}
+#alti .bar{position:relative;height:150px;width:8px;margin:10px auto;background:rgba(255,255,255,.2);border-radius:4px}
+#alti .bar i{position:absolute;left:0;right:0;bottom:0;height:var(--h,0%);background:linear-gradient(#7fd3ff,#fff);border-radius:4px;transition:height .6s ease}
+#alti .bar b{position:absolute;left:50%;bottom:var(--h,0%);width:18px;height:18px;margin:0 0 -9px -9px;border-radius:50%;background:#ffd500;box-shadow:0 0 0 3px #0a2e52;transition:bottom .6s ease}
+#alti .lv{font-weight:700;font-size:13px;text-align:center;min-height:2.5em;line-height:1.2}
+
+/* footer */
+footer{padding:36px 40px 46px;text-align:center;border-top:8px solid var(--ink)}
+footer .end{font-family:"Fraktur";font-size:clamp(34px,5vw,56px);margin:0}
+footer .favs{font:700 16px "Franklin";color:var(--red);margin:8px 0}
+footer .help{font:500 14px "Franklin";color:var(--grey)}
+.qr{display:inline-flex;gap:16px;align-items:center;text-align:left;margin:18px 0 6px;border:2px solid var(--ink);padding:10px 16px 10px 10px;background:#fff;max-width:100%}
+.qr img{width:116px;height:116px;display:block;flex:none}
+.qr span{font:500 14px "Franklin";max-width:240px;line-height:1.4;overflow-wrap:anywhere;min-width:0}
+footer small{display:block;margin-top:14px;font:500 13px "Franklin";color:var(--grey);line-height:1.6}
+
+/* ===== LIGHTBOX ===== */
+#lb{position:fixed;inset:0;z-index:50;display:flex;flex-direction:column;align-items:center;justify-content:center;opacity:0;visibility:hidden;transition:opacity .3s,visibility .3s;background:#141414;touch-action:pan-y pinch-zoom;user-select:none;-webkit-user-select:none}
+#lb.open{opacity:1;visibility:visible}
+.lb-top{position:absolute;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:12px 18px;gap:10px;z-index:8;color:#eee}
+.lb-ctr{font:800 18px "Franklin";letter-spacing:.06em;min-width:90px}
+.lb-ctr small{display:block;font-weight:600;font-size:11px;letter-spacing:.18em;text-transform:uppercase;opacity:.7}
+.lb-btns{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+.btn{font:700 13px "Franklin";letter-spacing:.08em;text-transform:uppercase;color:#141414;background:var(--paper);border:0;padding:9px 13px;cursor:pointer;transition:background .15s}
+.btn:hover,.btn:focus-visible{background:#fff;outline:2px solid var(--red)}
+.btn.on{background:var(--red);color:#fff}
+.btn .sm{display:none}
+.btn.close{font:700 18px Arial,sans-serif;padding:6px 12px}
+#stage{margin-top:40px;width:min-content;max-width:calc(100vw - 24px);background:var(--paper);padding:12px 12px 0;box-shadow:0 20px 60px rgba(0,0,0,.6)}
+#stage .box{aspect-ratio:auto;perspective:1400px}
+#lbimg{display:block;max-width:calc(100vw - 230px);max-height:calc(100vh - 290px);max-height:calc(100dvh - 290px);width:auto;height:auto;opacity:0;transition:opacity .2s}
+#lbimg.show{opacity:1}
+#stage .cap{width:0;min-width:100%;font-size:17px;padding:9px 2px 11px}
+.arrow{position:absolute;top:50%;transform:translateY(-50%);width:56px;height:56px;display:grid;place-items:center;cursor:pointer;background:var(--paper);border:0;border-radius:50%;z-index:8;padding:0;transition:background .15s}
+.arrow svg{width:26px;height:26px}
+.arrow:hover,.arrow:focus-visible{background:#fff;outline:3px solid var(--red)}
+.arrow.prev{left:18px}.arrow.next{right:18px}
+.lb-sec{margin-top:14px;font:600 13px "Franklin";letter-spacing:.18em;color:#bbb;text-transform:uppercase;text-align:center;padding:0 10px}
+.toast{position:absolute;bottom:22px;left:50%;transform:translateX(-50%);background:var(--paper);color:#141414;padding:10px 18px;font:700 14px "Franklin";opacity:0;transition:opacity .4s;pointer-events:none;z-index:9;text-align:center;max-width:90vw;border-left:5px solid var(--red)}
+.toast.on{opacity:1}
+#lb:fullscreen{background:#141414}
+
+/* ===== TRANSITIONS =====
+   Warstwy .L0/.L1/.L2 leżą NAD zdjęciem tylko w trakcie efektu; zdjęcie samo w sobie nigdy nie jest filtrowane. */
+.L0,.L1,.L2{position:absolute;inset:0;z-index:3;pointer-events:none;display:none;overflow:hidden}
+.fx-on .L0,.fx-on .L1,.fx-on .L2{display:block}
+@property --ir{syntax:"<percentage>";inherits:false;initial-value:0%}
+@property --sx{syntax:"<percentage>";inherits:false;initial-value:15%}
+@property --sr{syntax:"<percentage>";inherits:false;initial-value:14%}
+@property --hd{syntax:"<length>";inherits:false;initial-value:9px}
+@keyframes out{0%,55%{opacity:1}100%{opacity:0}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+/* 1. Radar */
+.fx-radar .L0{background:repeating-radial-gradient(circle,transparent 0 15%,rgba(90,255,140,.55) 15% 15.6%),linear-gradient(rgba(90,255,140,.35),rgba(90,255,140,.35)) center/1px 100% no-repeat,linear-gradient(rgba(90,255,140,.35),rgba(90,255,140,.35)) center/100% 1px no-repeat,#03170a;animation:out 1s ease-in both var(--d,0s)}
+.fx-radar .L1{inset:-50%;background:conic-gradient(from 0deg,rgba(120,255,160,.75),rgba(120,255,160,0) 70deg,transparent 0);animation:spin .5s linear 2 var(--d,0s),out 1s ease-in both var(--d,0s)}
+@keyframes spin{to{transform:rotate(360deg)}}
+.fx-radar img{animation:fadeIn .35s ease-out .55s backwards}
+.th.fx-radar img{animation-delay:calc(var(--d,0s) + .55s)}
+/* 2. Celownik dalmierza */
+.fx-reticle .L0{background:#050505;-webkit-mask:radial-gradient(circle,transparent 0 var(--ir),#000 calc(var(--ir) + .5%));mask:radial-gradient(circle,transparent 0 var(--ir),#000 calc(var(--ir) + .5%));animation:reticle 1.05s cubic-bezier(.6,0,.2,1) both var(--d,0s)}
+.fx-reticle .L1{background:linear-gradient(rgba(255,60,40,.9),rgba(255,60,40,.9)) center/2px 100% no-repeat,linear-gradient(rgba(255,60,40,.9),rgba(255,60,40,.9)) center/100% 2px no-repeat,radial-gradient(circle,transparent 0 9%,rgba(255,60,40,.9) 9% 9.6%,transparent 9.6% 22%,rgba(255,60,40,.6) 22% 22.4%,transparent 22.4%);animation:out 1.05s ease-in both var(--d,0s),wob 1.05s ease-in-out both var(--d,0s)}
+@keyframes reticle{0%{--ir:6%}45%{--ir:7%}60%{--ir:9%}100%{--ir:85%}}
+@keyframes wob{0%{transform:translate(-8%,4%)}45%{transform:translate(5%,-3%)}60%,100%{transform:none}}
+.fx-reticle .L2::after{content:"CEL NAMIERZONY · 12 m";position:absolute;left:10px;bottom:8px;font:700 12px "Courier Prime";color:#ff5a40;letter-spacing:.1em}
+#stage.fx-reticle .L2{animation:out 1.05s both}
+/* 3. Morse */
+.fx-morse .L0{background:#000;animation:morseOut 1.1s linear both var(--d,0s)}
+.fx-morse .L1{background:#fff8d8;animation:morse 1.1s steps(1,end) both var(--d,0s)}
+@keyframes morse{0%{opacity:.95}12%{opacity:0}16%{opacity:.95}22%{opacity:0}27%{opacity:.95}32%{opacity:0}37%{opacity:.95}50%{opacity:0}55%{opacity:.95}60%{opacity:0}66%,100%{opacity:0}}
+@keyframes morseOut{0%,64%{opacity:1}100%{opacity:0}}
+.fx-morse .L2::after{content:"−··  −−··  ·−−  −−−  −·";position:absolute;left:0;right:0;bottom:10%;text-align:center;font:700 clamp(16px,3vw,30px) "Courier Prime";color:#ffd500;letter-spacing:.15em}
+#stage.fx-morse .L2{animation:morseOut 1.1s both}
+/* 4. Reflektor */
+.fx-search .L0{background:#04060b;-webkit-mask:radial-gradient(circle at var(--sx) 40%,transparent 0 var(--sr),#000 calc(var(--sr) + 6%));mask:radial-gradient(circle at var(--sx) 40%,transparent 0 var(--sr),#000 calc(var(--sr) + 3%));animation:search 1.05s cubic-bezier(.5,0,.3,1) both var(--d,0s)}
+@keyframes search{0%{--sx:8%;--sr:7%}55%{--sx:88%;--sr:8%}75%{--sx:50%;--sr:10%}100%{--sx:50%;--sr:110%;opacity:0}}
+/* 5. Prasa drukarska */
+.fx-press .L0{background:repeating-linear-gradient(180deg,transparent 0 9px,rgba(0,0,0,.28) 9px 13px) 14px 14px/calc(33% - 10px) 100% repeat-x,var(--paper);animation:pressPaper .9s cubic-bezier(.55,0,.35,1) both var(--d,0s)}
+.fx-press .L1{left:-30px;width:30px;right:auto;background:linear-gradient(90deg,#111,#555 40%,#111);box-shadow:0 0 18px rgba(0,0,0,.6);animation:roller .9s cubic-bezier(.55,0,.35,1) both var(--d,0s)}
+@keyframes pressPaper{0%,15%{clip-path:inset(0 0 0 0)}100%{clip-path:inset(0 0 0 100%)}}
+@keyframes roller{0%,15%{transform:translateX(0)}99%{opacity:1}100%{transform:translateX(calc(var(--W,600px) + 30px));opacity:0}}
+.th.fx-press .L1{--W:600px}
+/* 6. Odwracanie strony */
+.fx-page .box img{transform-origin:0 50%;animation:page .85s cubic-bezier(.25,.9,.3,1.05) backwards var(--d,0s)}
+.fx-page .L0{background:linear-gradient(90deg,rgba(0,0,0,.6),transparent 70%);animation:out .85s ease-out both var(--d,0s)}
+@keyframes page{0%{transform:perspective(1200px) rotateY(-100deg);opacity:.3}60%{transform:perspective(1200px) rotateY(6deg);opacity:1}100%{transform:perspective(1200px) rotateY(0)}}
+/* 7. Pieczątka */
+.fx-stamp .box img{animation:fadeIn .2s ease-out backwards var(--d,0s)}
+.fx-stamp .L0{display:grid!important;place-items:center;overflow:visible}
+.fx-stamp .L0::after{content:"DO DRUKU";white-space:nowrap;font:700 clamp(22px,5vw,56px) "Courier Prime";letter-spacing:.12em;color:#c8102e;border:5px double #c8102e;border-radius:6px;padding:2px 16px;animation:stamp 1.15s cubic-bezier(.2,.9,.3,1) both var(--d,0s)}
+.th.fx-stamp .L0::after{font-size:20px;border-width:4px;padding:1px 8px}
+@keyframes stamp{0%{transform:rotate(-24deg) scale(3);opacity:0}22%{transform:rotate(-11deg) scale(1);opacity:.95}70%{transform:rotate(-11deg) scale(1);opacity:.9}100%{transform:rotate(-11deg) scale(1.04);opacity:0}}
+/* 8. Telewizor */
+.fx-tv .L0{background-image:var(--noise);background-size:160px 160px;animation:static .9s steps(1,end) both var(--d,0s),tvOut .9s ease-in both var(--d,0s)}
+.fx-tv .box img{animation:crt .9s cubic-bezier(.3,.8,.3,1) backwards var(--d,0s)}
+@keyframes static{0%{background-position:0 0}15%{background-position:-40px 70px}30%{background-position:60px -30px}45%{background-position:-90px -50px}60%{background-position:30px 110px}75%{background-position:-70px 20px}90%{background-position:100px -80px}}
+@keyframes tvOut{0%,40%{opacity:1}75%{opacity:.35}100%{opacity:0}}
+@keyframes crt{0%,38%{transform:scale(1.15,.006);opacity:0}39%{opacity:1}62%{transform:scale(1.02,1.05)}100%{transform:none}}
+/* 9. Raster drukarski */
+.fx-halftone .L0{background:radial-gradient(circle,#161616 0 var(--hd),transparent calc(var(--hd) + .6px)) 0 0/14px 14px,transparent;animation:halftone 1s cubic-bezier(.5,0,.4,1) both var(--d,0s)}
+@keyframes halftone{0%{--hd:10px}20%{--hd:10px}100%{--hd:0px}}
+.fx-halftone .L1{background:var(--paper);animation:out .45s ease-in both var(--d,0s)}
+/* 10. Puzzle (tylko powiększenie) */
+#stage.fx-tiles img{animation:hideTill 1s steps(1,end) backwards}
+#stage.fx-tiles .L2{display:grid;grid-template-columns:repeat(var(--tc),1fr);grid-template-rows:repeat(var(--tr),1fr);perspective:900px;animation:gone 1.05s steps(1,end) both}
+#stage.fx-tiles .L2 i{background-repeat:no-repeat;animation:tile .42s cubic-bezier(.3,1.4,.5,1) both;backface-visibility:hidden}
+@keyframes hideTill{0%{opacity:0}100%{opacity:1}}
+@keyframes gone{0%{opacity:1}100%{opacity:0;visibility:hidden}}
+@keyframes tile{0%{transform:rotateX(-90deg) scale(.6);opacity:0}100%{transform:none;opacity:1}}
+/* 11. Szpalty (tylko powiększenie) */
+#stage.fx-columns .L2{display:flex}
+#stage.fx-columns .L2 i{flex:1;background:repeating-linear-gradient(180deg,transparent 0 10px,rgba(0,0,0,.25) 10px 13px) 8px 40px/calc(100% - 16px) 100% no-repeat,linear-gradient(#1b1b1b,#1b1b1b) 8px 10px/calc(100% - 16px) 18px no-repeat,var(--paper);border-right:1px solid rgba(0,0,0,.2);animation:colUp .8s cubic-bezier(.6,0,.3,1) both}
+#stage.fx-columns .L2 i:nth-child(even){animation-name:colDown}
+@keyframes colUp{0%,10%{transform:none}100%{transform:translateY(-105%)}}
+@keyframes colDown{0%,10%{transform:none}100%{transform:translateY(105%)}}
+
+/* reveal in the grid */
+.th.rv:not(.in) .pf{opacity:0;transform:translateY(22px)}
+.th.rv .pf{transition:opacity .3s ease var(--d,0s),transform .45s cubic-bezier(.2,.9,.3,1.2) var(--d,0s)}
+
+@media (max-width:860px){
+ .front{grid-template-columns:1fr}
+ .issue .body{column-count:2}
+}
+@media (max-width:700px){
+ body{font-size:16px}
+ .ears{padding:12px 14px 6px;font-size:10px;letter-spacing:.06em}
+ .ears span:nth-child(2){display:none}
+ .mast h1{font-size:clamp(34px,11.4vw,60px)}
+ .dateline{margin:10px 14px 0;font-size:10.5px;letter-spacing:.04em}
+ .front{padding:16px 14px 24px;gap:22px}
+ .front .cols{column-count:1;font-size:16px}
+ .issue{padding:22px 14px 34px}
+ .issue .body,.t1938 .body,.t2016 .body,.epilog .body{column-count:1;font-size:16px}
+ .ihead .mini{font-size:22px}.ihead .meta{font-size:11px;text-align:left}
+ .t2000 .ihead{margin:0 -14px 16px}
+ .stamp{font-size:12px}
+ .facts{grid-template-columns:repeat(2,1fr)}.facts div{border-bottom:1px solid var(--ink)}.facts b{font-size:24px}
+ .grid{display:grid;grid-template-columns:1fr 1fr;gap:20px 12px}
+ .th,.th.big{width:auto}.th.wide{grid-column:span 2}
+ .th:not(.wide) .box{aspect-ratio:.75}
+ .th.solo{grid-column:span 2;justify-self:center;width:calc(50% - 6px)}
+ .cap{font-size:12.5px}.t1985 .cap{font-size:12.5px}.cap .cr{display:none}
+ .sub-h{font-size:12px;letter-spacing:.12em;margin:26px 0 12px}
+ #dial{padding:7px 10px}#dial .lbl{display:none}#dial a{font-size:13px;padding:5px 10px}
+ #alti{right:auto;left:50%;top:auto;bottom:10px;width:auto;display:flex;align-items:center;gap:8px;padding:6px 12px;border-radius:30px;transform:translate(-50%,160%)}
+ body.climb #alti{transform:translate(-50%,0)}
+ #alti .t{display:none}
+ #alti .bar{height:8px;width:70px;margin:0}#alti .bar i{top:0;bottom:0;height:auto;width:var(--h,0%);right:auto}#alti .bar b{bottom:50%;left:var(--h,0%);margin:0 0 -7px -7px;width:14px;height:14px;transition:left .6s ease}
+ #alti .lv{font-size:12px;min-height:0;white-space:nowrap}
+ footer{padding:28px 14px 36px}
+ .qr img{width:92px;height:92px}
+ .th.fx-stamp .L0::after{font-size:13px;border-width:3px;padding:1px 5px}
+ #stage{margin-top:14px;padding:7px 7px 0}
+ #lbimg{max-width:calc(100vw - 38px);max-height:calc(100vh - 270px);max-height:calc(100dvh - 270px)}
+ #stage .cap{font-size:14px;padding:7px 2px 9px}
+ .arrow{top:auto;bottom:16px;transform:none;width:50px;height:50px}
+ .arrow.prev{left:calc(50% - 84px)}.arrow.next{right:calc(50% - 84px)}
+ .lb-top{padding:10px}.lb-btns{flex-wrap:nowrap;gap:5px}.btn{font-size:11px;padding:8px 8px;letter-spacing:.03em}.btn .lg{display:none}.btn .sm{display:inline}.lb-ctr{font-size:15px;min-width:56px}
+ .lb-sec{margin-bottom:72px;font-size:11px;letter-spacing:.12em}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important}.th.rv .pf{opacity:1!important;transform:none!important}.L0,.L1,.L2{display:none!important}}
+</style>
+</head>
+<body>
+<div class="page" id="top">
+ <div class="ears"><span>Wydanie rodzinne · Nakład: 1 egz.</span><span>Szczecin – Świnoujście</span><span>Cena: bezcenne</span></div>
+ <header class="mast">
+  <h1>Echo Pomorza Zachodniego</h1>
+  <p class="tag">Dziennik rodzinny znad Zalewu i Bałtyku · wydanie specjalne</p>
+ </header>
+ <div class="dateline"><span>Rocznik 1938–2016</span><span>Świnoujście-Warszów, ul. Ku Morzu</span><span>49 zdjęć · 4 wyprawy</span></div>
+ <div class="front">
+  <div>
+   <div class="kick">Temat numeru</div>
+   <h2>Dzwon, który nigdy nie zadzwonił</h2>
+   <p class="deck">Betonowa wieża w Warszowie nie wydała z siebie ani jednego dźwięku, a i tak przyciąga naszą rodzinę od 1985 roku. Cztery wyprawy, 49 zdjęć i jeden dowód, że beton też potrafi się zmienić.</p>
+   <div class="cols">
+    <p>Zbudowano ją w latach 1938–1939 jako wieżę kierowania ogniem niemieckiej baterii nadbrzeżnej Goeben. Udawała latarnię morską, a dziś wypatruje pożarów lasu. Nasza redakcja odwiedzała ją w 1985, 2000, 2006 i 2016 roku.</p>
+    <p>W tym wydaniu: samotna wyprawa do wnętrza, weto najmłodszego członka załogi, schody na sam szczyt dostrzegalni i wieża po liftingu. Proszę przewracać strony, ale uwaga: zdjęcia lubią pojawiać się z zaskoczenia.</p>
+   </div>
+   <div class="cta-row"><button class="cta" id="startShow" type="button">▶ Pokaz slajdów</button><a class="cta alt" href="#r1938">Czytaj od pierwszej strony</a></div>
+   <p class="disc">„Echo Pomorza Zachodniego” to tytuł fikcyjny, wymyślony na potrzeby tego rodzinnego wydania. Wszelkie podobieństwo do prawdziwych gazet jest przypadkowe.</p>
+  </div>
+  <aside class="side">
+   <h3>Przed i po: 2000 kontra 2016</h3>
+   <div class="ba" id="ba" style="--p:50%">
+    <img class="b" src="thumbs/2016_dzwon_001.jpg" alt="Dzwon w 2016 roku, ze stalową nadbudówką">
+    <img class="a" src="thumbs/2000_danusia135.jpg" alt="Dzwon w 2000 roku, bez nadbudówki">
+    <span class="lab l">2000</span><span class="lab r">2016</span>
+    <div class="handle"></div>
+    <input type="range" min="0" max="100" value="50" aria-label="Porównanie: przesuń, aby zobaczyć wieżę w 2000 i 2016 roku">
+   </div>
+   <p class="capt">Przesuń suwak. Po lewej Dzwon w 2000 roku, jeszcze w surowym betonie; po prawej w 2016: biały, ze stalową nadbudówką i dostrzegalnią. Fot. archiwum rodzinne</p>
+   <h3>W numerze</h3>
+   <ul class="toc" id="toc"></ul>
+  </aside>
+ </div>
+ <nav id="dial" aria-label="Oś czasu"><span class="lbl">Roczniki:</span><span class="prog"></span></nav>
+ <main id="sections"></main>
+ <section class="issue epilog" id="epilog">
+  <div class="ihead"><span class="mini">Echo Pomorza Zachodniego</span><span class="meta">Od redakcji · Epilog</span></div>
+  <div class="kick">Słowo na koniec</div>
+  <h2>Dzwon milczy, rodzina wraca</h2>
+  <p class="lead">Dzwon nigdy nie zadzwonił, ale co kilka lat przypomina o sobie.</p>
+  <div class="body">
+   <p>1985: beton, piasek i ciekawość, która zaprowadziła naszego wysłannika do środka. 2000: wycieczka z najmłodszym pasażerem na pokładzie i weto, którego nikt nie śmiał podważyć. 2006: schody, lornetki i las aż po horyzont. 2016: biel, stal i cisza.</p>
+   <p>Wieża, która miała namierzać okręty, dziś namierza najwyżej dym nad lasem i kolejne pokolenia turystów. Redakcja zaprasza na następne wydanie. Termin? Jak zwykle: kiedy Dzwon zawoła.</p>
+  </div>
+  <p class="src">Źródła historyczne: <a href="https://pl.wikipedia.org/wiki/Bateria_Goeben" target="_blank" rel="noopener">Wikipedia, „Bateria Goeben”</a> · <a href="https://miedzyzdroje.szczecin.lasy.gov.pl/witamy/-/journal_content/56/34493/38103" target="_blank" rel="noopener">Nadleśnictwo Międzyzdroje</a> · <a href="https://polska-org.pl/9100906,Swinoujscie,Wieza_dowodzenia_baterii_Goeben_Dzwon.html" target="_blank" rel="noopener">polska-org.pl</a></p>
+ </section>
+ <footer>
+  <p class="end">Koniec wydania</p>
+  <p class="favs" id="favInfo"></p>
+  <p class="help">Kliknij zdjęcie, aby je powiększyć · strzałki ← → · spacja = pokaz slajdów · H = ulubione · Esc = zamknij</p>
+  <div class="qr"><img src="qr_dzwon.png" alt="Kod QR do tego wydania" width="116" height="116"><span>Zeskanuj telefonem i czytaj dalej:<br><b>gladiator2201.github.io/dzwon</b></span></div>
+  <small>Zdjęcia z lat 1985, 2006 i 2016 pokazano bez zmian. Zdjęcia z 2000 roku odnowiono klasycznymi metodami: usunięto niebieski nalot i przywrócono kolory, bez retuszu twarzy.<br>Efekty przejść pojawiają się tylko w chwili wyświetlenia zdjęcia.</small>
+ </footer>
+</div>
+
+<aside id="alti" aria-hidden="true"><div class="t">Wysokościomierz</div><div class="bar"><i></i><b></b></div><div class="lv" id="altiLv">Parter</div></aside>
+
+<div id="lb" role="dialog" aria-modal="true" aria-label="Przeglądarka zdjęć">
+ <div class="lb-top">
+  <div class="lb-ctr" id="ctr">1 / 49</div>
+  <div class="lb-btns">
+   <button class="btn" id="fav" type="button" title="Dodaj do ulubionych (H)">♡ <span class="lg">Ulubione</span></button>
+   <button class="btn" id="play" type="button">▶ <span class="lg">Pokaz slajdów</span><span class="sm">Slajdy</span></button>
+   <button class="btn" id="fs" type="button">⛶ <span class="lg">Pełny ekran</span><span class="sm">Ekran</span></button>
+   <button class="btn close" id="close" type="button" title="Zamknij (Esc)" aria-label="Zamknij">✕</button>
+  </div>
+ </div>
+ <button class="arrow prev" id="prev" type="button" aria-label="Poprzednie zdjęcie"><svg viewBox="0 0 30 30" fill="none" stroke="#141414" stroke-width="4" stroke-linecap="round"><path d="M19 4L8 15l11 11"/></svg></button>
+ <button class="arrow next" id="next" type="button" aria-label="Następne zdjęcie"><svg viewBox="0 0 30 30" fill="none" stroke="#141414" stroke-width="4" stroke-linecap="round"><path d="M11 4l11 11-11 11"/></svg></button>
+ <div id="stage" class="pf"><div class="box" id="sbox"><img id="lbimg" alt=""><i class="L0"></i><i class="L1"></i><div class="L2" id="L2"></div></div><span class="cap" id="cap"></span></div>
+ <div class="lb-sec" id="lbsec"></div>
+ <div class="toast" id="toast"></div>
+</div>
+
+<script>
+const ALBUM = [{"id": "r1938", "year": "1938", "theme": "t1938", "tab": "1938–39", "issue": "Dodatek historyczny · Świnoujście-Warszów, ul. Ku Morzu", "date": "Z archiwum: lata 1938–1939", "kicker": "Z archiwum", "title": "Latarnia, która tylko udawała", "lead": "Zanim wieża stała się celem rodzinnych wypraw, była oczami niemieckiej artylerii nadbrzeżnej.", "body": ["W latach 1938–1939 na wyspie Wolin powstała ciężka bateria artylerii nadbrzeżnej <b>Goeben</b>, która miała bronić Zatoki Pomorskiej i portu w Świnoujściu. Jej mózgiem była właśnie ta betonowa wieża dowodzenia, czyli kierowania ogniem, dziś nazywana po prostu Dzwonem.", "Osiem kondygnacji i pełna samowystarczalność: w piwnicy maszynownia i magazyny, wyżej centrala dowodzenia, pomieszczenia socjalne i kwatery załogi. Na samej górze, pod pancerną kopułą, przewidziano optyczny dalmierz o bazie 12 metrów, z którego można było obserwować cele odległe o 45–50 km.", "Wieży nie maskowano. Kształt upodabniał ją do latarni morskiej, a pochyłe ściany miały sprawiać, że pociski i bomby odbijają się rykoszetem. Krótko mówiąc: kamuflaż w wersji „udawaj, że jesteś kimś innym”.", "Po latach beton dostał nową pracę. Na początku XXI wieku nadbudowano stalową konstrukcję z dostrzegalnią przeciwpożarową Nadleśnictwa Międzyzdroje (źródła podają rok 2003 lub 2004), a Dzwon trafił na Szlak Fortyfikacyjny Twierdzy Świnoujście."], "byline": "Opracowanie: dział historyczny redakcji rodzinnej", "groups": []}, {"id": "r1985", "year": "1985", "theme": "t1985", "tab": "1985", "issue": "Nr 64 · Rok wyprawy I", "date": "Niedziela, 17 marca 1985", "kicker": "Reportaż z Warszowa", "title": "Nasz człowiek w betonowym dzwonie", "lead": "Marzec, piasek, sosny i ani śladu turystów. Wieża nie ma jeszcze żadnej nadbudówki, a nasz wysłannik wchodzi do środka.", "body": ["Droga prowadzi betonką przez las, potem skrajem zaoranego pola, nad którym wieża wystaje jak figura szachowa zgubiona przez olbrzyma. Z bliska Dzwon jest szary, surowy i bardzo poważny.", "Uczestnik wyprawy, Stach, wszedł do środka. Zdjęć z wnętrza nie zamieszczamy, bo ich nie ma, ale redakcja ustaliła ponad wszelką wątpliwość, że wyszedł.", "Po drodze ekipa zaliczyła też leśne bajorko, brzozy i wydmy. Pogoda: marcowa. Nastrój: odkrywczy."], "byline": "Tekst: korespondent rodzinny · Zdjęcia: archiwum rodzinne, 1985", "stamp": "CENZURA: BEZ ZASTRZEŻEŃ", "groups": [{"h": null, "items": [{"f": "1985_1985_03_17_Warszow.jpg", "w": 1024, "h": 1024, "c": "Cała wyprawa na jednej stronie: fotokolaż z 17 marca 1985"}, {"f": "1985_bunkier_pryw.jpg", "w": 1896, "h": 1888, "c": "Cel na horyzoncie. Pole przed nami, wieża za lasem"}, {"f": "1985_betonka.jpg", "w": 994, "h": 612, "c": "Betonka prowadzi prosto do celu. Korków brak"}, {"f": "1985_bajorko.jpg", "w": 638, "h": 1014, "c": "Leśne bajorko. Kąpieli nie odnotowano"}, {"f": "1985_bajoroA.jpg", "w": 655, "h": 657, "c": "Sosny i brzozy na straży bajorka"}, {"f": "1985_bajoroB.jpg", "w": 657, "h": 651, "c": "Wydma, woda i las: marzec w wersji nadmorskiej"}, {"f": "1985_schronDz.jpg", "w": 634, "h": 1012, "c": "Pełna sylwetka. Kto by pomyślał, że to nie latarnia"}, {"f": "1985_dzwonA.jpg", "w": 653, "h": 659, "c": "Dzwon z bliska: beton, okienka i zero nadbudówki"}, {"f": "1985_dzwonB.jpg", "w": 653, "h": 650, "c": "Podstawa wieży. Ściany pochyłe, żeby pociski się odbijały"}]}]}, {"id": "r2000", "year": "2000", "theme": "t2000", "tab": "2000", "issue": "Wydanie milenijne · Nr 118", "date": "Poniedziałek, 22 maja 2000", "kicker": "Sensacja na Wolinie!", "title": "Najmłodszy członek załogi zgłasza weto!", "lead": "Wolin, Warszów, Międzyzdroje: jeden dzień, cztery osoby i jeden pasażer z biletem w jedną stronę. Do bunkra nikt nie wszedł. Wiemy dlaczego.", "body": ["Wyprawa ruszyła w składzie: Danusia, Stach, Monika i Krzysztof. Pierwszy przystanek: Wolin, z czerwonym kościołem, ciemnym posągiem i ławką, na której dało się złapać oddech.", "Potem Warszów i Dzwon, wciąż bez stalowej czapki. Plan zakładał zwiedzanie wnętrza, ale nie uwzględnił najmłodszego członka załogi. Monika spodziewała się dziecka, a mała istota z biletem w jedną stronę już po drodze dała znać, że bunkry jej nie interesują: część śniadania postanowiła wysiąść przystanek wcześniej. Weto przyjęto jednogłośnie.", "Dalej było już tylko lżej: plaża w Międzyzdrojach, bose stopy w Bałtyku i molo, z którego widać całe wybrzeże."], "byline": "Tekst: specjalny wysłannik · Zdjęcia: archiwum rodzinne, 2000", "note": "Zdjęcia z tego wydania odnowiono: usunięto niebieski nalot ze skanów odbitek i przywrócono naturalne kolory. Twarzy nie retuszowano.", "groups": [{"h": "Wolin", "items": [{"f": "2000_danusia125.jpg", "w": 2048, "h": 1315, "c": "Wolin: posąg stoi nieruchomo, ekipa też się stara"}, {"f": "2000_danusia127.jpg", "w": 1556, "h": 2048, "c": "Kto się chowa za posągiem? Redakcja nie zdradza"}, {"f": "2000_danusia130_A.jpg", "w": 2048, "h": 1365, "c": "Ławka w Wolinie. Narada przed dalszą drogą"}, {"f": "2000_danusia132.jpg", "w": 2048, "h": 1365, "c": "Trio nad wodą, żaglówki w tle"}, {"f": "2000_danusia133.jpg", "w": 2048, "h": 1366, "c": "Na moście, z zabytkami w tle"}]}, {"h": "Warszów: Dzwon", "items": [{"f": "2000_danusia134.jpg", "w": 2048, "h": 1323, "c": "Jest! Dzwon w majowej zieleni"}, {"f": "2000_danusia135.jpg", "w": 2048, "h": 1365, "c": "Ekipa pod wieżą. Do środka? Weto!"}, {"f": "2000_danusia136.jpg", "w": 1525, "h": 2048, "c": "Z dołu wieża wygląda jeszcze poważniej"}, {"f": "2000_danusia137.jpg", "w": 2048, "h": 1331, "c": "Pamiątkowe zdjęcie zamiast zwiedzania"}]}, {"h": "Międzyzdroje", "items": [{"f": "2000_danusia138.jpg", "w": 2048, "h": 1365, "c": "Bałtyk sprawdzony stopą. Zimny, ale nasz"}, {"f": "2000_danusia140.jpg", "w": 2048, "h": 1365, "c": "Coś ciekawego na piasku? Śledztwo trwa"}, {"f": "2000_danusia143.jpg", "w": 2048, "h": 1366, "c": "Przerwa na plaży. Załoga odpoczywa"}, {"f": "2000_danusia146.jpg", "w": 2048, "h": 1365, "c": "Trzy sylwetki i horyzont jak spod linijki"}, {"f": "2000_danusia148.jpg", "w": 2048, "h": 1215, "c": "Widok z mola: wybrzeże jak z pocztówki"}, {"f": "2000_danusia150.jpg", "w": 2048, "h": 1365, "c": "Na molo wiatr robi fryzury za darmo"}, {"f": "2000_danusia154.jpg", "w": 2048, "h": 1323, "c": "Molo od spodu, perspektywa dla odważnych"}, {"f": "2000_danusia156.jpg", "w": 1912, "h": 1274, "c": "Międzyzdroje witają. Wejście na molo"}, {"f": "2000_danusia159.jpg", "w": 2048, "h": 1365, "c": "Przy niebieskiej bramie: narada nad torbą"}]}]}, {"id": "r2006", "year": "2006", "theme": "t2006", "tab": "2006", "issue": "Wydanie wieczorne · Nr 158", "date": "Piątek, 7 lipca 2006", "kicker": "Reportaż z wysokości", "title": "Dzwon otwiera drzwi. Widok: bezcenny", "lead": "Wieża ma już stalową nadbudówkę z dostrzegalnią przeciwpożarową. Danusia i Stach trafiają na życzliwego pana z dostrzegalni, który zaprasza ich na górę.", "body": ["Leśną drogą pod wieżę, przy wejściu tablice Szlaku Fortyfikacyjnego, a potem schody. Dużo schodów. Nasz reporter liczył je do pewnego momentu, potem liczył już tylko oddechy.", "Na górze: lornetki, kabina obserwatora i las aż po horyzont. Kto pilnuje lasu przed pożarem, ten ma najlepszy widok w okolicy. Panu z dostrzegalni redakcja dziękuje za gościnę.", "Dzień kończy się tak, jak powinien: zachodem słońca nad Bałtykiem."], "byline": "Tekst i zdjęcia: archiwum rodzinne, 2006", "climb": true, "groups": [{"h": "Parter: przed wejściem", "lvl": 0, "items": [{"f": "2006_IM000745.jpg", "w": 2048, "h": 1536, "c": "Leśną drogą do Dzwonu. Kierunek: w górę"}, {"f": "2006_IM000746.jpg", "w": 2048, "h": 1536, "c": "Pierwszy rzut oka zza sosen"}, {"f": "2006_IM000750.jpg", "w": 2048, "h": 1536, "c": "Dzwon w nowym kapeluszu ze stali"}, {"f": "2006_IM000751.jpg", "w": 2048, "h": 1536, "c": "Wejście. Tablice informują, nogi już wiedzą"}, {"f": "2006_IM000752.jpg", "w": 2048, "h": 1536, "c": "Tablica przy wejściu przeczytana. Można iść"}, {"f": "2006_IM000754.jpg", "w": 2048, "h": 1536, "c": "W drzwiach Dzwonu. Proszę do środka!"}]}, {"h": "Schody: w górę!", "lvl": 1, "items": [{"f": "2006_IM000757.jpg", "w": 2048, "h": 1536, "c": "Schody w półmroku. Kroki liczone na głos"}, {"f": "2006_IM000758.jpg", "w": 2048, "h": 1536, "c": "Jeszcze kawałek. Światło na końcu klatki"}]}, {"h": "Szczyt: dostrzegalnia", "lvl": 2, "items": [{"f": "2006_IM000772.jpg", "w": 2048, "h": 1536, "c": "Na szczycie: lornetka w ruch"}, {"f": "2006_IM000773.jpg", "w": 2048, "h": 1536, "c": "Pamiątka z góry, las aż po horyzont"}, {"f": "2006_IM000779.jpg", "w": 2048, "h": 1536, "c": "Kabina obserwatora. Tu się wypatruje dymu"}, {"f": "2006_IM000781.jpg", "w": 2048, "h": 1536, "c": "Lornetka numer jeden: las pod kontrolą"}, {"f": "2006_IM000782.jpg", "w": 2048, "h": 1536, "c": "Lornetka numer dwa: kapelusz i pełne skupienie"}]}, {"h": "Powrót i zachód słońca", "lvl": 3, "items": [{"f": "2006_IM000792.jpg", "w": 2048, "h": 1536, "c": "Powrót leśną drogą. Nogi pamiętają schody"}, {"f": "2006_IM000799.jpg", "w": 2048, "h": 1536, "c": "Na deser: zachód słońca nad Bałtykiem"}]}]}, {"id": "r2016", "year": "2016", "theme": "t2016", "tab": "2016", "issue": "Wydanie cyfrowe · Nr 2016", "date": "Rok 2016", "kicker": "Fotoreportaż", "title": "Biały jak nowy. Dzwon po liftingu", "lead": "Dziesięć lat później wieża stoi biała, z wysoką stalową nadbudówką i schodami. Las wokół ten sam, tylko drzewa mają kilka słojów więcej.", "body": ["Odnowiony beton lśni w słońcu, a kratownica nad nim przypomina, że Dzwon ma dziś pracę: pilnuje lasu przed pożarem.", "Obok tablice Szlaku Fortyfikacyjnego opowiadają o umocnieniach z różnych epok, także tych już polskich, z czasów zimnej wojny."], "byline": "Zdjęcia: archiwum rodzinne, 2016", "groups": [{"h": null, "items": [{"f": "2016_dzwon_001.jpg", "w": 2048, "h": 1365, "c": "Dzwon 2016: biały, wysoki i bardzo zadbany"}, {"f": "2016_dzwon_009.jpg", "w": 2048, "h": 1365, "c": "Wieża w objęciach lasu"}, {"f": "2016_dzwon_019.jpg", "w": 2048, "h": 1365, "c": "Pod słońce: sylwetka jak latarnia"}, {"f": "2016_dzwon_005.jpg", "w": 2048, "h": 1365, "c": "Stalowa nadbudówka z bliska. Schody dla wytrwałych"}, {"f": "2016_dzwon_020.jpg", "w": 2048, "h": 1365, "c": "Kratownica, sosny i niebieskie niebo"}, {"f": "2016_dzwon_022.jpg", "w": 2048, "h": 1365, "c": "Tablica szlaku: Batalionowy Rejon Umocniony, lata 1949–1954"}, {"f": "2016_dzwon_043.jpg", "w": 2048, "h": 1365, "c": "Ambona w lesie obok. Konkurencja dla dostrzegalni?"}]}]}];
+const src=(k,f)=>k+"/"+f, pad=n=>String(n).padStart(2,"0");
+const RM=window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches;
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+(function(){try{const c=document.createElement("canvas");c.width=c.height=160;const x=c.getContext("2d"),d=x.createImageData(160,160);for(let i=0;i<d.data.length;i+=4){const v=Math.random()*255|0;d.data[i]=d.data[i+1]=d.data[i+2]=v;d.data[i+3]=255;}x.putImageData(d,0,0);document.documentElement.style.setProperty("--noise",`url(${c.toDataURL()})`);}catch(e){}})();
+const FX_LB=["radar","reticle","morse","search","press","page","stamp","tv","halftone","tiles","columns"];
+const FX_GRID=["radar","press","reticle","halftone","search","stamp","page","morse","tv"];
+const FKEY="dzwon-ulubione";
+let favs=new Set(); try{favs=new Set(JSON.parse(localStorage.getItem(FKEY)||"[]"));}catch(e){}
+const saveFavs=()=>{try{localStorage.setItem(FKEY,JSON.stringify([...favs]));}catch(e){}};
+
+// build issues
+const flat=[], main=document.getElementById("sections"), dial=document.getElementById("dial"), toc=document.getElementById("toc");
+const tabs=[];
+ALBUM.forEach((ch,ci)=>{
+ const s=document.createElement("section"); s.className="issue "+ch.theme; s.id=ch.id;
+ let h=`<div class="ihead"><span class="mini">Echo Pomorza Zachodniego</span><span class="meta">${ch.issue}<br>${ch.date}</span></div>
+ <div class="kick">${ch.kicker}</div><h2>${ch.title}</h2><p class="lead">${ch.lead}</p><p class="by">${ch.byline}</p>
+ ${ch.stamp?`<div class="stamp">${ch.stamp}</div>`:""}
+ <div class="body">${ch.body.map(p=>`<p>${p}</p>`).join("")}</div>${ch.note?`<p class="note">${ch.note}</p>`:""}`;
+ if(ch.id==="r1938") h+=`<div class="facts"><div><b>8</b><span>kondygnacji</span></div><div><b>12 m</b><span>baza dalmierza</span></div><div><b>45–50 km</b><span>zasięg obserwacji</span></div><div><b>ok. 18 m</b><span>pierwotna wysokość</span></div><div><b>750 m</b><span>od brzegu morza</span></div></div>
+ <p class="src">Źródła: <a href="https://pl.wikipedia.org/wiki/Bateria_Goeben" target="_blank" rel="noopener">Wikipedia, „Bateria Goeben”</a> · <a href="https://miedzyzdroje.szczecin.lasy.gov.pl/witamy/-/journal_content/56/34493/38103" target="_blank" rel="noopener">Nadleśnictwo Międzyzdroje</a> · <a href="https://polska-org.pl/9100906,Swinoujscie,Wieza_dowodzenia_baterii_Goeben_Dzwon.html" target="_blank" rel="noopener">polska-org.pl</a></p>`;
+ s.innerHTML=h;
+ ch.groups.forEach(g=>{
+  if(g.h){const sh=document.createElement("div"); sh.className="sub-h"; sh.textContent=g.h; if(g.lvl!==undefined) sh.dataset.lvl=g.lvl; s.appendChild(sh);}
+  const grid=document.createElement("div"); grid.className="grid"; if(g.lvl!==undefined) grid.dataset.lvl=g.lvl;
+  g.items.forEach((it,k)=>{
+   const i=flat.length; flat.push({...it,ch,grp:g.h});
+   const a=document.createElement("a"); a.className="th"+(it.w>it.h?" wide":"")+(i===0?" big":""); a.href="#"+(i+1);
+   a.style.setProperty("--a",(it.w/it.h).toFixed(4)); a.style.setProperty("--d",((k%3)*0.12).toFixed(2)+"s");
+   a.dataset.fx=FX_GRID[i%FX_GRID.length];
+   a.innerHTML=`<span class="fav-dot" aria-hidden="true">♥</span><div class="pf"><div class="box"><img loading="lazy" decoding="async" src="${src('thumbs',it.f)}" width="${it.w}" height="${it.h}" alt="${esc(it.c)}"><i class="L0"></i><i class="L1"></i></div><span class="cap"><span class="no">Fot. ${i+1}.</span>${esc(it.c)}<span class="cr">Fot. archiwum rodzinne · ${ch.year==="1938"?"":ch.year}</span></span></div>`;
+   a.addEventListener("click",e=>{e.preventDefault();openLB(i);});
+   grid.appendChild(a);
+  });
+  const ps=[...grid.querySelectorAll(".th:not(.wide)")]; if(ps.length%2) ps[ps.length-1].classList.add("solo");
+  s.appendChild(grid);
+ });
+ main.appendChild(s);
+ const t=document.createElement("a"); t.href="#"+ch.id; t.textContent=ch.tab; dial.appendChild(t); tabs.push([t,s]);
+ toc.insertAdjacentHTML("beforeend",`<li><a href="#${ch.id}"><b>Str. ${ci+2}</b><span>${ch.tab}: ${ch.title}</span></a></li>`);
+});
+{const t=document.createElement("a"); t.href="#epilog"; t.textContent="Epilog"; dial.appendChild(t); tabs.push([t,document.getElementById("epilog")]);
+ toc.insertAdjacentHTML("beforeend",`<li><a href="#epilog"><b>Str. ${ALBUM.length+2}</b><span>Epilog: Dzwon milczy, rodzina wraca</span></a></li>`);}
+const N=flat.length, thumbs=[...document.querySelectorAll(".th")];
+thumbs.forEach((a,i)=>a.setAttribute("aria-label",`Zdjęcie ${i+1} z ${N}: ${flat[i].c}`));
+function paintFavs(){ thumbs.forEach((a,i)=>a.classList.toggle("is-fav",favs.has(flat[i].f)));
+ const n=favs.size; document.getElementById("favInfo").textContent=n?`♥ Ulubione na tym urządzeniu: ${n}`:""; }
+paintFavs();
+
+// timeline dial + progress + altimeter
+const prog=dial.querySelector(".prog"), alti=document.getElementById("alti"), altiLv=document.getElementById("altiLv");
+const LV=["Parter: przed wejściem","Schody: w górę!","Szczyt: dostrzegalnia","Widok i powrót"], LVH=[8,40,100,60];
+let curLvl=-1;
+function setLvl(l){ if(l===curLvl) return; curLvl=l; alti.style.setProperty("--h",LVH[l]+"%"); alti.querySelector(".bar").style.setProperty("--h",LVH[l]+"%"); altiLv.textContent=LV[l]; }
+let ticking=false;
+function onScroll(){ ticking=false; const y=innerHeight*0.35; let act=null;
+ tabs.forEach(([t,s])=>{ const r=s.getBoundingClientRect(); if(r.top<y) act=t; });
+ tabs.forEach(([t])=>t.classList.toggle("on",t===act));
+ if(act&&dial.scrollWidth>dial.clientWidth){ const l=act.offsetLeft-dial.clientWidth/2+act.offsetWidth/2; dial.scrollTo({left:l,behavior:RM?"auto":"smooth"}); }
+ const doc=document.documentElement, p=Math.min(100,Math.max(0,scrollY/(doc.scrollHeight-innerHeight)*100)); prog.style.width=p+"%";
+ const s06=document.getElementById("r2006").getBoundingClientRect(); const climb=s06.top<innerHeight*.5&&s06.bottom>innerHeight*.5; document.body.classList.toggle("climb",climb);
+ if(climb){ let l=0; document.querySelectorAll("#r2006 .grid[data-lvl]").forEach(g=>{ if(g.getBoundingClientRect().top<innerHeight*.6) l=+g.dataset.lvl; }); setLvl(l); }
+}
+addEventListener("scroll",()=>{ if(!ticking){ticking=true; requestAnimationFrame(onScroll);} },{passive:true}); onScroll();
+
+// before/after slider
+(function(){ const ba=document.getElementById("ba"), r=ba.querySelector("input"); const set=v=>ba.style.setProperty("--p",v+"%");
+ r.addEventListener("input",()=>set(r.value));
+ // gentle hint wiggle once when visible
+ if(!RM&&"IntersectionObserver" in window){ const o=new IntersectionObserver(es=>{ if(es[0].isIntersecting){ o.disconnect(); let t0=null; const step=ts=>{ if(t0===null)t0=ts; const k=(ts-t0)/1400; if(k>=1||r.dataset.touched){ if(!r.dataset.touched)set(50); return;} set(50+28*Math.sin(k*Math.PI*2)); requestAnimationFrame(step); }; setTimeout(()=>requestAnimationFrame(step),500);} },{threshold:.6}); o.observe(ba); }
+ ["pointerdown","keydown","touchstart"].forEach(e=>r.addEventListener(e,()=>r.dataset.touched=1,{passive:true}));
+})();
+
+// surprise reveals while scrolling
+if(!RM&&"IntersectionObserver" in window){
+ const io=new IntersectionObserver(es=>es.forEach(e=>{ if(!e.isIntersecting) return; const a=e.target; io.unobserve(a);
+  a.classList.add("in","fx-on","fx-"+a.dataset.fx); setTimeout(()=>a.classList.remove("fx-on","fx-"+a.dataset.fx),1900); }),{rootMargin:"0px 0px -10% 0px",threshold:.25});
+ thumbs.forEach(a=>{a.classList.add("rv"); io.observe(a);});
+}
+
+// lightbox
+const lb=document.getElementById("lb"),img=document.getElementById("lbimg"),L2=document.getElementById("L2"),sbox=document.getElementById("sbox"),ctr=document.getElementById("ctr"),cap=document.getElementById("cap"),lbsec=document.getElementById("lbsec"),stage=document.getElementById("stage"),toastEl=document.getElementById("toast"),favBtn=document.getElementById("fav");
+let cur=0,timer=null,lastFocus=null,token=0,fxT=null,bag=[],lastFx="";
+function nextFx(){ if(!bag.length){ bag=FX_LB.slice(); for(let i=bag.length-1;i>0;i--){const j=Math.random()*(i+1)|0;[bag[i],bag[j]]=[bag[j],bag[i]];} if(bag[bag.length-1]===lastFx) bag.unshift(bag.pop()); } return lastFx=bag.pop(); }
+function clearFx(){ stage.className="pf"; L2.innerHTML=""; L2.removeAttribute("style"); }
+function runFx(name,url){
+ clearFx(); if(RM) return; void stage.offsetWidth;
+ sbox.style.setProperty("--W",sbox.offsetWidth+"px");
+ if(name==="tiles"){ const C=5,R=4; L2.style.setProperty("--tc",C); L2.style.setProperty("--tr",R); let h="";
+  for(let r=0;r<R;r++)for(let c=0;c<C;c++) h+=`<i style="background-image:url('${url}');background-size:${C*100}% ${R*100}%;background-position:${c/(C-1)*100}% ${r/(R-1)*100}%;animation-delay:${(Math.random()*.5).toFixed(2)}s"></i>`;
+  L2.innerHTML=h; }
+ if(name==="columns"){ let h=""; for(let c=0;c<6;c++) h+=`<i style="animation-delay:${(c*0.05).toFixed(2)}s"></i>`; L2.innerHTML=h; }
+ stage.classList.add("fx-on","fx-"+name);
+ clearTimeout(fxT); fxT=setTimeout(clearFx,1400);
+}
+function favPaint(){ const on=favs.has(flat[cur].f); favBtn.classList.toggle("on",on); favBtn.innerHTML=(on?"♥":"♡")+' <span class="lg">Ulubione</span>'; }
+function show(i){
+ cur=(i+N)%N; const it=flat[cur], my=++token;
+ ctr.innerHTML=`${cur+1} / ${N}<small>${it.ch.tab==="1938–39"?"":it.ch.tab}</small>`;
+ const pre=new Image(); pre.src=src("img",it.f);
+ const swap=()=>{ if(my!==token) return; img.src=pre.src; img.alt=it.c; cap.innerHTML=`<span class="no">Fot. ${cur+1}.</span>${esc(it.c)}<span class="cr">Fot. archiwum rodzinne · ${it.ch.year}</span>`;
+  lbsec.textContent=`${it.ch.date} · ${it.ch.title}${it.grp?" · "+it.grp:""}`; img.classList.add("show"); runFx(nextFx(),pre.src); };
+ (pre.decode?pre.decode().catch(()=>{}):Promise.resolve()).then(swap);
+ [1,-1].forEach(d=>{const n=new Image(); n.src=src("img",flat[(cur+d+N)%N].f);});
+ favPaint();
+ if(history.replaceState) history.replaceState(null,"","#"+(cur+1));
+}
+function openLB(i){lastFocus=document.activeElement; img.removeAttribute("src"); img.classList.remove("show"); lb.classList.add("open"); document.body.style.overflow="hidden"; show(i); document.getElementById("close").focus({preventScroll:true});}
+function closeLB(){stopPlay(); if(document.fullscreenElement||document.webkitFullscreenElement){(document.exitFullscreen||document.webkitExitFullscreen).call(document);} lb.classList.remove("open"); clearFx(); document.body.style.overflow=""; if(history.replaceState) history.replaceState(null,"",location.pathname+location.search); if(lastFocus) lastFocus.focus({preventScroll:true});}
+const next=()=>show(cur+1), prev=()=>show(cur-1);
+document.getElementById("next").onclick=()=>{stopPlay();next();};
+document.getElementById("prev").onclick=()=>{stopPlay();prev();};
+document.getElementById("close").onclick=closeLB;
+lb.addEventListener("click",e=>{ if(e.target===lb) closeLB(); });
+function toggleFav(){ const f=flat[cur].f; if(favs.has(f)){favs.delete(f); toast("Usunięto z ulubionych");} else {favs.add(f); toast("♥ Dodano do ulubionych");} saveFavs(); favPaint(); paintFavs(); }
+favBtn.onclick=toggleFav; img.addEventListener("dblclick",toggleFav);
+document.addEventListener("keydown",e=>{ if(!lb.classList.contains("open")) return;
+ if(e.key==="ArrowRight"){stopPlay();next();} else if(e.key==="ArrowLeft"){stopPlay();prev();}
+ else if(e.key==="Escape"){ if(!(document.fullscreenElement||document.webkitFullscreenElement)) closeLB(); }
+ else if(e.key===" "){e.preventDefault(); togglePlay();}
+ else if(e.key==="h"||e.key==="H"){toggleFav();} });
+let tx=null,ty=null;
+lb.addEventListener("touchstart",e=>{ if(e.touches.length===1){tx=e.touches[0].clientX;ty=e.touches[0].clientY;} },{passive:true});
+lb.addEventListener("touchend",e=>{ if(tx===null) return; const dx=e.changedTouches[0].clientX-tx, dy=e.changedTouches[0].clientY-ty; tx=null;
+ if(Math.abs(dx)>50&&Math.abs(dx)>Math.abs(dy)*1.3){ stopPlay(); dx<0?next():prev(); } });
+const playBtn=document.getElementById("play");
+function stopPlay(){ if(timer){clearInterval(timer);timer=null;playBtn.classList.remove("on");playBtn.innerHTML='▶ <span class="lg">Pokaz slajdów</span><span class="sm">Slajdy</span>';} }
+function togglePlay(){ if(timer){stopPlay();return;} timer=setInterval(next,4200); playBtn.classList.add("on"); playBtn.innerHTML='❚❚ <span class="lg">Zatrzymaj</span><span class="sm">Stop</span>'; toast("Pokaz slajdów: nowe zdjęcie co 4 sekundy"); }
+playBtn.onclick=togglePlay;
+document.getElementById("startShow").onclick=()=>{openLB(0); togglePlay();};
+function toast(t){ toastEl.textContent=t; toastEl.classList.add("on"); clearTimeout(toast._t); toast._t=setTimeout(()=>toastEl.classList.remove("on"),2600); }
+const fsBtn=document.getElementById("fs");
+function fsUpdate(){ fsBtn.innerHTML=(document.fullscreenElement||document.webkitFullscreenElement)?'⛶ <span class="lg">Zamknij pełny ekran</span><span class="sm">Ekran</span>':'⛶ <span class="lg">Pełny ekran</span><span class="sm">Ekran</span>'; }
+document.addEventListener("fullscreenchange",fsUpdate); document.addEventListener("webkitfullscreenchange",fsUpdate);
+fsBtn.onclick=()=>{
+ if(document.fullscreenElement||document.webkitFullscreenElement){ (document.exitFullscreen||document.webkitExitFullscreen).call(document); return; }
+ const req=lb.requestFullscreen||lb.webkitRequestFullscreen, en=document.fullscreenEnabled||document.webkitFullscreenEnabled;
+ if(!req||!en){ toast("Pełny ekran niedostępny tutaj, naciśnij F11"); return; }
+ try{ const p=req.call(lb); if(p&&p.catch) p.catch(()=>toast("Pełny ekran niedostępny tutaj, naciśnij F11")); }catch(e){ toast("Pełny ekran niedostępny tutaj, naciśnij F11"); }
+};
+const hh=parseInt(location.hash.slice(1)); if(hh>=1&&hh<=N) openLB(hh-1);
+</script>
+</body>
+</html>
